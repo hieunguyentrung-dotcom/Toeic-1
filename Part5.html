@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buổi 1 — Part 5: Incomplete Sentences</title>
+<style>
+  :root{
+    --navy:#1E2761; --navy2:#2A3B7E; --gold:#B8860B; --gold-light:#D4A017;
+    --ice:#CADCFC; --bg:#F4F6FC; --card:#FFFFFF; --text:#222; --green:#1E7A34; --red:#B3261E;
+  }
+  *{box-sizing:border-box;}
+  body{font-family:'Segoe UI',Calibri,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;}
+  header{background:var(--navy);color:#fff;padding:28px 5vw;}
+  header h1{margin:0 0 6px 0;font-size:1.7rem;}
+  header p{margin:0;color:var(--ice);font-style:italic;}
+  main{max-width:900px;margin:0 auto;padding:24px 5vw 80px;}
+  section{background:var(--card);border-radius:10px;padding:20px 24px;margin-bottom:22px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+  h2{color:var(--navy);border-bottom:3px solid var(--navy);padding-bottom:6px;font-size:1.25rem;}
+  ul{padding-left:20px;} li{margin-bottom:8px;}
+  table{width:100%;border-collapse:collapse;margin-top:10px;}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e0e0e0;font-size:0.95rem;}
+  th{background:var(--navy);color:#fff;}
+  tr:nth-child(even){background:#f2f4fb;}
+  .qbox{border:1px solid #e2e6f5;border-radius:8px;padding:14px 16px;margin-bottom:14px;}
+  .qtext{font-weight:600;margin-bottom:4px;}
+  .qtrans{color:#555;font-style:italic;font-size:0.9rem;margin-bottom:10px;}
+  .opttrans{color:#777;font-style:italic;font-size:0.85rem;}
+  .opt{display:block;width:100%;text-align:left;padding:8px 12px;margin-bottom:6px;border:1px solid #ccd4ee;border-radius:6px;background:#fafbff;cursor:pointer;font-size:0.95rem;transition:.15s;}
+  .opt:hover{background:#eef1fb;}
+  .opt.selected{border-color:var(--navy2);background:#e3e8fb;font-weight:600;}
+  .opt.correct{background:#e5f5e8;border-color:var(--green);color:var(--green);font-weight:700;}
+  .opt.incorrect{background:#fbe9e7;border-color:var(--red);color:var(--red);font-weight:700;}
+  .explain{display:none;margin-top:8px;padding:8px 12px;background:#fff8e6;border-left:4px solid var(--gold-light);font-size:0.9rem;border-radius:4px;}
+  .hintbtn{background:none;border:1px solid var(--gold-light);color:var(--gold);padding:5px 12px;border-radius:20px;font-size:0.85rem;cursor:pointer;margin-top:4px;}
+  .hintbtn:hover{background:var(--gold-light);color:#fff;}
+  .hintbox{display:none;margin-top:8px;padding:8px 12px;background:#fdf4e3;border-left:4px solid var(--gold-light);font-size:0.88rem;border-radius:4px;color:#6b5210;}
+  .unlockbar{text-align:center;margin:28px 0;}
+  .unlockbar button{background:var(--gold-light);color:var(--navy);border:none;padding:12px 28px;font-size:1rem;font-weight:700;border-radius:30px;cursor:pointer;}
+  .unlockbar button:hover{background:var(--gold);color:#fff;}
+  #score{text-align:center;font-size:1.1rem;font-weight:700;color:var(--navy);margin-top:14px;display:none;}
+  .badge{display:inline-block;background:var(--navy);color:#fff;border-radius:50%;width:34px;height:34px;line-height:34px;text-align:center;font-weight:700;margin-right:10px;}
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 BUỔI 1 — PART 5: Incomplete Sentences</h1>
+  <p>Tài liệu tự học trước buổi học · TOEIC Reading Test 1</p>
+</header>
+<main>
+
+  <section>
+    <h2>1. Chiến thuật &amp; mẹo làm bài</h2>
+    <ul>
+      <li>Xác định nhanh <b>4 dạng câu hỏi</b>: (1) word form — nhìn đuôi từ loại của 4 đáp án; (2) verb tense/form — chú ý mốc thời gian, trợ động từ; (3) giới từ/liên từ — xem sau chỗ trống là cụm danh từ hay mệnh đề; (4) từ vựng theo nghĩa — 4 đáp án cùng từ loại.</li>
+      <li>Đọc theo cụm (chunking), không dịch cả câu.</li>
+      <li>Loại trừ trước — chọn đáp án hợp lý về <b>ngữ pháp</b>, không phải đáp án "nghe hay" về nghĩa.</li>
+      <li>Mục tiêu tốc độ: <b>20–25 giây/câu</b>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Ngữ pháp &amp; từ vựng trọng tâm</h2>
+    <table>
+      <tr><th>Điểm ngữ pháp</th><th>Ví dụ / ghi nhớ</th></tr>
+      <tr><td>Hậu tố danh từ/tính từ/trạng từ</td><td>-tion/-ment/-ness (n) · -ive/-ful/-ous (adj) · -ly (adv). VD: significant → significantly → significance</td></tr>
+      <tr><td>Present perfect vs Past simple</td><td>Present perfect: liên hệ hiện tại, đi với for/since. Past simple: mốc thời gian cụ thể (yesterday, in 2020...)</td></tr>
+      <tr><td>Giới từ chỉ thời gian</td><td>by (hạn chót) · until (kéo dài) · since (mốc bắt đầu) · for (khoảng thời gian) · before/after</td></tr>
+      <tr><td>Liên từ nguyên nhân/nhượng bộ</td><td>because + mệnh đề · because of + cụm DT · although + mệnh đề · despite + cụm DT</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>💡 Mẹo nâng cao — Part 5</h2>
+    <ul>
+      <li>Cảnh giác "bẫy" từ na ná nghĩa nhưng khác từ loại (VD: <i>economic</i> – thuộc kinh tế / <i>economical</i> – tiết kiệm).</li>
+      <li>Nếu 2 đáp án cùng nghĩa nhưng khác thì/dạng, hãy xét chủ ngữ số ít hay số nhiều, và mốc thời gian trong câu.</li>
+      <li>Với câu hỏi giới từ, thử "dịch nhanh" cụm chứa chỗ trống để cảm nhận nghĩa trước khi chọn.</li>
+      <li>Nếu phân vân, loại các đáp án nghe "lạ" hoặc hiếm gặp trong văn phong công sở (business English).</li>
+      <li>Không dành quá 25 giây cho 1 câu — đánh dấu và quay lại sau nếu chưa chắc.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Luyện tập (10 câu — làm trong 4 phút)</h2>
+    <div id="quiz"></div>
+    <div class="unlockbar">
+      <button onclick="unlock()">🔒 Kiểm tra đáp án (nhập mật khẩu)</button>
+      <div id="score"></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+const questions = [
+{q:"The marketing team _______ the new product line at the trade show next week.",
+ qvi:"Đội ngũ marketing ______ dòng sản phẩm mới tại hội chợ thương mại vào tuần tới.",
+ opts:[["presented","đã trình bày"],["presenting","đang trình bày"],["will present","sẽ trình bày"],["presentation","bài thuyết trình (danh từ)"]], correct:2,
+ hint:"Chú ý trạng từ chỉ thời gian \"next week\" ở cuối câu.",
+ explain:"Mốc thời gian \"next week\" → cần thì tương lai (will present)."},
+{q:"All employees are required to wear _______ identification badges while inside the facility.",
+ qvi:"Tất cả nhân viên phải đeo thẻ nhận diện ______ khi ở trong cơ sở.",
+ opts:[["proper","đúng quy cách, phù hợp (tính từ)"],["properly","một cách đúng đắn (trạng từ)"],["property","tài sản (danh từ)"],["properties","các tài sản (danh từ số nhiều)"]], correct:0,
+ hint:"Chỗ trống đứng ngay trước một danh từ.",
+ explain:"Chỗ trống bổ nghĩa cho danh từ \"identification badges\" → cần tính từ (proper)."},
+{q:"The quarterly report indicates a _______ increase in customer satisfaction scores.",
+ qvi:"Báo cáo quý cho thấy mức tăng ______ trong điểm số hài lòng của khách hàng.",
+ opts:[["signify","biểu thị (động từ)"],["significant","đáng kể (tính từ)"],["significantly","một cách đáng kể (trạng từ)"],["signification","sự biểu thị (danh từ, ít dùng)"]], correct:1,
+ hint:"Chỗ trống đứng trước danh từ \"increase\".",
+ explain:"Chỗ trống đứng trước danh từ \"increase\" → cần tính từ (significant)."},
+{q:"_______ the heavy rainfall, the outdoor conference was moved indoors.",
+ qvi:"______ trận mưa lớn, hội nghị ngoài trời đã được chuyển vào trong nhà.",
+ opts:[["Because","Bởi vì (liên từ + mệnh đề)"],["Because of","Bởi vì (giới từ + cụm danh từ)"],["Even though","Mặc dù (liên từ nhượng bộ)"],["Unless","Trừ khi"]], correct:1,
+ hint:"Xem phía sau chỗ trống là cụm danh từ hay mệnh đề có chủ ngữ + động từ.",
+ explain:"Theo sau là cụm danh từ \"the heavy rainfall\" (không phải mệnh đề) → dùng giới từ \"because of\"."},
+{q:"Ms. Tran has worked at Delta Consulting _______ more than ten years.",
+ qvi:"Bà Trần đã làm việc tại Delta Consulting ______ hơn mười năm.",
+ opts:[["since","kể từ"],["for","trong khoảng (đi với khoảng thời gian)"],["during","trong suốt (đi với danh từ chỉ sự kiện)"],["while","trong khi (liên từ)"]], correct:1,
+ hint:"Cụm \"more than ten years\" là một khoảng thời gian, không phải mốc thời gian.",
+ explain:"\"for + khoảng thời gian\" (more than ten years) đi với thì hiện tại hoàn thành."},
+{q:"The new software update will improve system _______ significantly.",
+ qvi:"Bản cập nhật phần mềm mới sẽ cải thiện đáng kể ______ của hệ thống.",
+ opts:[["reliable","đáng tin cậy (tính từ)"],["reliably","một cách đáng tin cậy (trạng từ)"],["reliability","độ tin cậy (danh từ)"],["rely","tin cậy (động từ)"]], correct:2,
+ hint:"Chỗ trống là tân ngữ trực tiếp của động từ \"improve\".",
+ explain:"Chỗ trống là tân ngữ của động từ \"improve\" → cần danh từ (reliability)."},
+{q:"Employees who have not _______ the safety training will not be permitted to operate the machinery.",
+ qvi:"Nhân viên chưa ______ khóa đào tạo an toàn sẽ không được phép vận hành máy móc.",
+ opts:[["complete","hoàn thành (nguyên mẫu)"],["completed","đã hoàn thành (phân từ quá khứ)"],["completing","đang hoàn thành (phân từ hiện tại)"],["completion","sự hoàn thành (danh từ)"]], correct:1,
+ hint:"Xem trợ động từ ngay trước chỗ trống (have not ___).",
+ explain:"Sau \"have not\" (hiện tại hoàn thành) → cần dạng phân từ quá khứ (completed)."},
+{q:"The board of directors will meet _______ Thursday to discuss the merger proposal.",
+ qvi:"Hội đồng quản trị sẽ họp ______ thứ Năm để thảo luận đề xuất sáp nhập.",
+ opts:[["at","tại (giờ)"],["in","trong (tháng/năm)"],["on","vào (thứ/ngày)"],["by","trước (hạn chót)"]], correct:2,
+ hint:"Xem loại từ đi kèm \"Thursday\" — thứ trong tuần.",
+ explain:"Giới từ đi với thứ trong tuần là \"on\" (on Thursday)."},
+{q:"The manager decided to _______ the meeting until all department heads were available.",
+ qvi:"Người quản lý quyết định ______ cuộc họp cho đến khi tất cả trưởng phòng đều rảnh.",
+ opts:[["postpone","hoãn lại"],["cancel","hủy bỏ"],["attend","tham dự"],["announce","thông báo"]], correct:0,
+ hint:"Nghĩa cần khớp với vế sau \"until all department heads were available\".",
+ explain:"\"postpone ... until\" (hoãn đến khi) phù hợp nghĩa nhất trong 4 đáp án."},
+{q:"The company's revenue grew _______ compared to the previous fiscal year.",
+ qvi:"Doanh thu công ty tăng ______ so với năm tài chính trước.",
+ opts:[["substantial","đáng kể (tính từ)"],["substantially","một cách đáng kể (trạng từ)"],["substance","chất liệu/bản chất (danh từ)"],["substantiate","chứng minh (động từ)"]], correct:1,
+ hint:"Chỗ trống bổ nghĩa cho động từ \"grew\".",
+ explain:"Chỗ trống bổ nghĩa cho động từ \"grew\" → cần trạng từ (substantially)."}
+];
+
+const quizDiv = document.getElementById('quiz');
+const selections = new Array(questions.length).fill(null);
+
+questions.forEach((item, qi) => {
+  const box = document.createElement('div');
+  box.className = 'qbox';
+  const letters = ['A','B','C','D'];
+  box.innerHTML = `<div class="qtext"><span class="badge">${qi+1}</span>${item.q}</div>` +
+    `<div class="qtrans">→ ${item.qvi}</div>` +
+    `<button class="hintbtn" onclick="toggleHint(${qi})">💡 Gợi ý</button>` +
+    `<div class="hintbox" id="hint${qi}">${item.hint}</div>` +
+    item.opts.map((opt,oi)=>`<button class="opt" id="q${qi}o${oi}" onclick="select(${qi},${oi})">(${letters[oi]}) ${opt[0]} <span class="opttrans">— ${opt[1]}</span></button>`).join('') +
+    `<div class="explain" id="exp${qi}"><b>Giải thích:</b> ${item.explain}</div>`;
+  quizDiv.appendChild(box);
+});
+
+function toggleHint(qi){
+  const box = document.getElementById(`hint${qi}`);
+  box.style.display = box.style.display === 'block' ? 'none' : 'block';
+}
+
+function select(qi, oi){
+  selections[qi] = oi;
+  for(let i=0;i<4;i++){
+    document.getElementById(`q${qi}o${i}`).classList.remove('selected');
+  }
+  document.getElementById(`q${qi}o${oi}`).classList.add('selected');
+}
+
+function unlock(){
+  const pass = prompt("Nhập mật khẩu để xem đáp án:");
+  if(pass !== "8378"){
+    if(pass !== null) alert("Mật khẩu không đúng.");
+    return;
+  }
+  let score = 0;
+  questions.forEach((item, qi) => {
+    for(let i=0;i<4;i++){
+      const btn = document.getElementById(`q${qi}o${i}`);
+      btn.classList.remove('selected');
+      if(i === item.correct){ btn.classList.add('correct'); }
+      else if(selections[qi] === i){ btn.classList.add('incorrect'); }
+    }
+    if(selections[qi] === item.correct) score++;
+    document.getElementById(`exp${qi}`).style.display = 'block';
+  });
+  const scoreDiv = document.getElementById('score');
+  scoreDiv.style.display = 'block';
+  scoreDiv.textContent = `Kết quả: ${score}/${questions.length} câu đúng`;
+}
+</script>
+</body>
+</html>
